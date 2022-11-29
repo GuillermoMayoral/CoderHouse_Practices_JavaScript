@@ -1,4 +1,4 @@
-//funciones sin parametros
+//-----------------------------funciones sin parametros
 function darBienvenida(){
     alert("bienvenidos a las funicones")
 }
@@ -15,7 +15,7 @@ function calcularEdad(){
 
 //calcularEdad();
 
-//Funciones con parametros
+//-----------------------------Funciones con parametros
 function calcularMultiplicacion(num1,num2){
     let resultado= num1 * num2;
     alert("el resultado de multiplicar " + num1 + " x " + num2 +" es: " + resultado);
@@ -36,7 +36,7 @@ function calcularIVA(precio){
 // let precioProd = parseFloat(prompt("ingresa el precio del producto"));
 // calcularIVA(precioProd);
 
-//usar funciones dentro de bucles
+//-----------------------------usar funciones dentro de bucles
 //FOR
 // for(let i=1;i<4;i++){
 //     let precioProd = parseFloat(prompt("ingresa el precio del producto" + i));
@@ -51,7 +51,7 @@ function calcularIVA(precio){
 // }
 
 
-//function con parametros y return
+//-----------------------------function con parametros y return
 function calcularM2(largo, ancho){
     let metrosCuad=largo*ancho;
     return metrosCuad;
