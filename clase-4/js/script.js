@@ -44,8 +44,25 @@ function calcularIVA(precio){
 // }
 
 //while
-let precioProd = parseFloat(prompt("ingresa el precio del producto (0 para salir)"));
-while(precioProd!=0){
-    calcularIVA(precioProd);
-    precioProd = parseFloat(prompt("ingresa el precio del producto (0 para salir)"));
+// let precioProd = parseFloat(prompt("ingresa el precio del producto (0 para salir)"));
+// while(precioProd!=0){
+//     calcularIVA(precioProd);
+//     precioProd = parseFloat(prompt("ingresa el precio del producto (0 para salir)"));
+// }
+
+
+//function con parametros y return
+function calcularM2(largo, ancho){
+    let metrosCuad=largo*ancho;
+    return metrosCuad;
 }
+
+function mostrarResultado (result){
+    alert("El valor calculado es: "+ result);
+}
+
+//una variable recibe lo que arroja la funcion
+let resultado = calcularM2(5,7);
+//alert("resultado es:" + resultado);
+mostrarResultado (resultado);
+
