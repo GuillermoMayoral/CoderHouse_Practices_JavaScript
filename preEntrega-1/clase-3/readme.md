@@ -1,6 +1,16 @@
 temario
 
-CICLOS
+-----------------------------for.each
+
+const numeros = [1,2,3,4,5,6,7,8,9];
+const triplicados = [];
+
+numeros.forEach(element => {
+element =element\*3;
+triplicados.push(element )
+});
+
+-----------------------------CICLOS
 
     -Ciclo por conteo for
 
