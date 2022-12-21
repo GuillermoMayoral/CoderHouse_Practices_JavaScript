@@ -111,3 +111,16 @@ Math.floor(azar); -->redondea al numero menor mas cercano
 Math.round(azar); -->segun corresponda a cual esta mas cerca
 
 Math.trunc(azar); -->deja solo el entero
+
+-----------------------------new date()
+
+-----Clase date para manejo de fechas
+let fechaActual = new Date();
+
+-----Clase date de forma especifica
+
+-----Date empieza a contar el mes desde 0 por lo que enero es el mes 0.
+let fechaActualEspecifica = new Date(2022, 7, 13);
+
+-----para obtener solo el dia
+console.log(fechaActualEspecifica.getDay());

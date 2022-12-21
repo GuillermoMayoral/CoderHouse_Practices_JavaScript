@@ -99,3 +99,10 @@ console.log(Math.max(22,64,57,85,35,125,2))
 
 let azar = Math.random()*100;
 console.log(azar);
+
+//Clase date para manejo de fechas
+let fechaActual = new Date();
+
+//Clase date de forma especifica
+
+let fechaActualEspecifica = new Date(2022, 7, 13); //enero es mes 0
