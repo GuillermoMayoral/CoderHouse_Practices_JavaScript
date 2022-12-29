@@ -107,3 +107,42 @@ for (const radio of radios) {
 radio.addEventListener('click',()=>{
 console.log('Hiciste click en el radiobutton '+radio.value);
 })
+
+> -----------------------------Eventos teclado
+
+inputPassword.addEventListener('keyup', ()=>{
+console.log(inputPassword.value);
+})
+inputPassword.addEventListener('keydown', () => {
+console.log(inputPassword.value);
+})
+
+> > -----Evento onchange de inputs
+
+inputNombre.onchange = () => {
+
+    console.log(inputNombre.value);
+
+}
+
+> > -----Información del evento
+
+inputPassword.addEventListener('keypress', (evento) => {
+let codCaracter = evento.charCode;
+console.log(evento.key);
+
+    if (codCaracter != 0) { //chequeo que no se haya presionado un caracter nulo
+        if (codCaracter < 97 || codCaracter > 122) { //chequeo si el caracter es algo diferente a una minuscula en el código ascii
+            evento.preventDefault();
+            alert("Solo podes usar minusculas");
+        }
+    }
+
+})
+
+const btnRegistrar = document.getElementById('registrar');
+
+btnRegistrar.onclick=(evento)=>{
+//evento.preventDefault();
+console.log('Te registraste exitosamente');
+}
